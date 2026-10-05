@@ -1,0 +1,75 @@
+login.salao
+
+LARISSA SACRAMENTO VENANCIO <0001231532@senaimgaluno.com.br>
+qui., 1 de out., 21:20 (há 4 dias)
+para larisv06
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salão Anala - Login 🌸</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="auth-page">
+
+    <div class="auth-container">
+        <h2>👑 Entrar no Salão Anala 💅✨</h2>
+        <p class="auth-subtitle">Acesse sua conta para ver seus agendamentos! 💋🎀</p>
+
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="emailLogin">E-mail (Gmail) ✉️💖</label>
+                <input type="email" id="emailLogin" placeholder="seuemail@gmail.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="senhaLogin">Senha 🔒✨</label>
+                <input type="password" id="senhaLogin" placeholder="Digite sua senha" required>
+            </div>
+
+            <button type="submit" class="btn-auth">Entrar 🎉💋</button>
+            <a href="agendamento.html" class="btn-auth btn-secondary"
+                style="display: block; text-align: center; text-decoration: none; margin-top: 10px;">Quero Agendar um
+                Horário 📝✨</a>
+        </form>
+
+        <p class="auth-footer">
+            <a href="index.html">← Voltar para a página inicial 🏠</a>
+        </p>
+    </div>
+
+    <!-- MINI CHAT DE AJUDA AO CLIENTE -->
+    <div class="chat-widget">
+        <button type="button" id="chatToggle" class="chat-btn">💬 Precisa de Ajuda? ✨</button>
+
+        <div id="chatBox" class="chat-box hidden">
+            <div class="chat-header">
+                <span>💬 Atendimento ao Cliente 👑</span>
+                <button type="button" id="chatClose">✖</button>
+            </div>
+
+            <div id="chatMessages" class="chat-messages">
+                <p class="bot-msg">Olá, querida! 🌸 Precisa de ajuda com o login ou tem alguma dúvida antes de agendar?
+                    Clique em uma das opções abaixo: 💋</p>
+                <div class="chat-quick-replies">
+                    <button type="button" class="quick-btn" id="btnAgendar">📅 Como Agendar?</button>
+                    <button type="button" class="quick-btn" id="btnHorario">🕒 Dias de Atendimento</button>
+                    <button type="button" class="quick-btn" id="btnPagamento">💳 Formas de Pagamento</button>
+                </div>
+            </div>
+
+            <div class="chat-input-area">
+                <input type="text" id="chatInput" placeholder="Digite sua dúvida... ✍️">
+                <button type="button" id="chatSend">Enviar 🚀</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

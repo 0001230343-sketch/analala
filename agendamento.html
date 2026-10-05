@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salão Anala - Agendamento 🌸✨</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="auth-page">
+
+    <div class="auth-container" style="max-width: 580px;">
+        <h2>👑 Agendamento de Horário 💅✨</h2>
+        <p class="auth-subtitle">Escolha seu corte favorito, dia e horário para ficar ainda mais maravilhosa! 💋🎀</p>
+
+        <form id="agendamentoForm">
+            <!-- DADOS PESSOAIS -->
+            <div class="form-group">
+                <label for="nomeCliente">Nome Completo 👤🌸</label>
+                <input type="text" id="nomeCliente" placeholder="Digite seu lindo nome" required>
+            </div>
+
+            <div class="form-group">
+                <label for="emailCliente">E-mail (Gmail) ✉️💖</label>
+                <input type="email" id="emailCliente" placeholder="seuemail@gmail.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="idadeCliente">Idade 🎂✨</label>
+                <input type="number" id="idadeCliente" placeholder="Sua idade" min="12" max="100" required>
+            </div>
+
+            <!-- OPÇÕES DE CORTES DE CABELO -->
+            <div class="form-group">
+                <label for="corteCabelo">Opções de Cortes de Cabelo ✂️💇‍♀️</label>
+                <select id="corteCabelo" class="input-select" required>
+                    <option value="">Selecione o corte de cabelo...</option>
+                    <option value="Corte Camadas (R$ 79,90)">Corte em Camadas (Dar Leveza e Volume) — R$ 79,90 🌸
+                    </option>
+                    <option value="Corte Chanel / Bob (R$ 89,90)">Corte Chanel / Bob Moderno — R$ 89,90 👑</option>
+                    <option value="Corte Butterfly (R$ 99,90)">Corte Borboleta / Butterfly Cut — R$ 99,90 🦋</option>
+                    <option value="Corte Long Bob (R$ 85,00)">Long Bob Versátil — R$ 85,00 ✨</option>
+                    <option value="Corte Pixie (R$ 75,00)">Corte Pixie Feminino (Curto Elegante) — R$ 75,00 ⚡</option>
+                    <option value="Corte Bordado / Pontas (R$ 60,00)">Corte Bordado / Removendo Pontas Duplas — R$ 60,00
+                        ✂️</option>
+                    <option value="Franja / Ajuste (R$ 35,00)">Ajuste de Franja — R$ 35,00 🎀</option>
+                </select>
+            </div>
+
+            <!-- SERVIÇOS ADICIONAIS -->
+            <div class="form-group">
+                <label for="servicoExtra">Adicionar Tratamento / Finalização? 💄✨</label>
+                <select id="servicoExtra" class="input-select">
+                    <option value="Nenhum">Apenas o corte selecionado ✨</option>
+                    <option value="Escova Modeladora (+R$ 35,00)">+ Escova Modeladora (R$ 35,00) 💨</option>
+                    <option value="Hidratação Express (+R$ 45,00)">+ Hidratação Express Brilho (R$ 45,00) 💎</option>
+                    <option value="Nutrição Profunda (+R$ 65,00)">+ Nutrição Profunda e Selagem (R$ 65,00) 🌸</option>
+                </select>
+            </div>
+
+            <!-- DATA (SEGUNDA A SEXTA) -->
+            <div class="form-group">
+                <label for="diaSemana">Dia de Atendimento (Segunda a Sexta) 🗓️️🌸</label>
+                <select id="diaSemana" class="input-select" required>
+                    <option value="">Selecione o dia...</option>
+                    <option value="Segunda-feira">Segunda-feira 🌸</option>
+                    <option value="Terça-feira">Terça-feira 💅</option>
+                    <option value="Quarta-feira">Quarta-feira 💄</option>
+                    <option value="Quinta-feira">Quinta-feira 💇‍♀️</option>
+                    <option value="Sexta-feira">Sexta-feira ✨</option>
+                </select>
+            </div>
+
+            <!-- HORÁRIOS DISPONÍVEIS -->
+            <div class="form-group">
+                <label for="horarioAtendimento">Horários Disponíveis 🕒⚡</label>
+                <select id="horarioAtendimento" class="input-select" required>
+                    <option value="">Selecione o horário...</option>
+                    <option value="08:00">08:00 (Manhã) 🌅</option>
+                    <option value="09:30">09:30 (Manhã) ☀️</option>
+                    <option value="11:00">11:00 (Manhã) 🌿</option>
+                    <option value="13:30">13:30 (Tarde) 🍧</option>
+                    <option value="15:00">15:00 (Tarde) ☕</option>
+                    <option value="16:30">16:30 (Tarde) 🌆</option>
+                </select>
+            </div>
+
+            <!-- FORMA DE PAGAMENTO -->
+            <div class="form-group">
+                <label for="pagamentoAgendamento">Forma de Pagamento 💳🛍️</label>
+                <select id="pagamentoAgendamento" class="input-select" required>
+                    <option value="">Selecione a forma de pagamento...</option>
+                    <option value="Pix">Pix (com 5% de desconto no salão!) ⚡💖</option>
+                    <option value="Cartão de Crédito">Cartão de Crédito 💳✨</option>
+                    <option value="Cartão de Débito">Cartão de Débito 💳🌸</option>
+                    <option value="Dinheiro">Dinheiro no Local 💵👑</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn-auth">Confirmar Agendamento 🎉💋</button>
+        </form>
+
+        <p class="auth-footer">
+            <a href="index.html">← Voltar para a página inicial 🏠</a>
+        </p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+

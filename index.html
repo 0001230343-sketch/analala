@@ -1,0 +1,76 @@
+html salao
+
+LARISSA SACRAMENTO VENANCIO <0001231532@senaimgaluno.com.br>
+qui., 1 de out., 21:18 (há 4 dias)
+para larisv06
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salão Anala - Beleza Feminina 🌸✨</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>👑 Salão Anala 💅✨</h1>
+        <p class="tagline">Seu momento de brilhar e se cuidar! 💋💇‍♀️🎀</p>
+
+        <nav>
+            <a href="index.html" class="nav-active">🏠 Início</a>
+            <a href="agendamento.html" class="nav-btn">📅 Agendar Horário</a>
+            <a href="cadastro.html" class="nav-btn nav-btn-outline">📝 Cadastre-se</a>
+            <a href="login.html" class="nav-btn nav-btn-outline">🔐 Entrar</a>
+        </nav>
+    </header>
+
+    <section class="banner">
+        <div>
+            <h2>Bem-vinda ao Salão Anala! 🌸✨💖</h2>
+            <p>Atendimento exclusivo de Segunda a Sexta com hora marcada. 💋🎀💇‍♀️</p>
+            <div class="banner-botoes">
+                <a href="agendamento.html" class="botao">📅 Agendar Horário ⚡</a>
+                <a href="cadastro.html" class="botao botao-secundario">📝 Cadastre-se 👑</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- MINI CHAT DE DÚVIDAS DO CLIENTE -->
+    <div class="chat-widget">
+        <button type="button" id="chatToggle" class="chat-btn">💬 Precisa de Ajuda? ✨</button>
+
+        <div id="chatBox" class="chat-box hidden">
+            <div class="chat-header">
+                <span>💬 Atendimento Salão Anala 👑</span>
+                <button type="button" id="chatClose">✖</button>
+            </div>
+
+            <div id="chatMessages" class="chat-messages">
+                <p class="bot-msg">Olá, diva! 🌸 Como podemos te ajudar hoje? Clique em uma das opções abaixo: 💋</p>
+                <div class="chat-quick-replies">
+                    <button type="button" class="quick-btn" id="btnAgendar">📅 Como Agendar?</button>
+                    <button type="button" class="quick-btn" id="btnHorario">🕒 Dias de Atendimento</button>
+                    <button type="button" class="quick-btn" id="btnPagamento">💳 Formas de Pagamento</button>
+                </div>
+            </div>
+
+            <div class="chat-input-area">
+                <input type="text" id="chatInput" placeholder="Digite sua dúvida... ✍️">
+                <button type="button" id="chatSend">Enviar 🚀</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 Salão Anala 👑💅✨ - Todos os direitos reservados.</p>
+        <p>📍 Atendimento de Segunda a Sexta-feira | 📱 (11) 99999-8888 💋</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
